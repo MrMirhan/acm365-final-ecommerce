@@ -1,0 +1,32 @@
+<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="comment_list">
+                <% if(product.reviews.length > 0 ) { %>
+                    <% for(const review of product.reviews) { %>
+                        <div class="review_item">
+                            <div class="media">
+                                <div class="d-flex">
+                                    <img src="<%= review.userImageUrl %>" alt="" />
+                                </div>
+                                <div class="media-body">
+                                    <h4>
+                                        <%= review.username %>
+                                    </h4>
+                                    <h5>
+                                        <%= review.date %>
+                                    </h5>
+                                </div>
+                            </div>
+                            <p>
+                                <%= review.comment %>
+                            </p>
+                        </div>
+                        <% } %>
+                            <% } else { %>
+                                <p>No reviews yet</p>
+                                <% } %>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<!-- feature_part start-->
+<section class="feature_part padding_top">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section_tittle text-center">
+                    <h2>Featured Category</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-between">
+            <% for(const feature of categories) { %>
+                <div class="<%= feature['col-lg'] %> col-sm-6">
+                    <div class="single_feature_post_text">
+                        <p>
+                            <%= feature.short %>
+                        </p>
+                        <h3>Latest
+                            <%= feature.name %>
+                        </h3>
+                        <a href="/category/<%= feature.route %>" class="feature_btn">EXPLORE NOW <i class="fas fa-play"></i></a>
+                        <img src="<%= feature.imageUrl %>" alt="">
+                    </div>
+                </div>
+                <% } %>
+        </div>
+    </div>
+</section>
+<!-- upcoming_event part start-->

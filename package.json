@@ -1,0 +1,37 @@
+{
+    "name": "acm365-final-ecommerce",
+    "version": "1.0.0",
+    "description": "E-commerce softwer written with NodeJS for ACM365 Final Project",
+    "author": "Hamza Mirhan Almendi",
+    "main": "index.js",
+    "scripts": {
+        "test": "nodemon index.js",
+        "start": "node index.js"
+    },
+    "engines": {
+        "node": "12.16.1"
+    },
+    "keywords": [],
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cookie-parser": "^1.4.6",
+        "cookie-session": "^2.0.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "ejs": "^3.1.5",
+        "express": "^4.17.1",
+        "express-async-errors": "^3.1.1",
+        "express-async-handler": "^1.2.0",
+        "express-ejs-layouts": "^2.5.0",
+        "express-session": "^1.17.3",
+        "joi": "^13.1.0",
+        "joi-objectid": "^2.0.0",
+        "keygrip": "^1.1.0",
+        "mongoose": "^5.10.14",
+        "winston": "^2.4.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.6"
+    }
+}

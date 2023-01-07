@@ -1,0 +1,15 @@
+<!-- subscribe_area part start-->
+<section class="client_logo padding_top">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <% for(const client of clients) { %>
+                    <div class="single_client_logo">
+                        <a href="<%= client.href %>"><img src="<%= client.imageUrl %>" alt=""></a>
+                    </div>
+                    <% } %>
+            </div>
+        </div>
+    </div>
+</section>
+<!--::subscribe_area part end::-->

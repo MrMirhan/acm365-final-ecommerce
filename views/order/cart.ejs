@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include("../partial/header") %>
+</head>
+
+<body>
+    <%- include("../partial/navbar") %>
+
+        <!--================Cart Area =================-->
+        <section class="cart_area padding_top">
+            <div class="container">
+                <div class="cart_inner">
+                    <% if(session.user.basket.length > 0) { %>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Product</th>
+                                        <th scope="col">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for(const product of session.user.basket) { %>
+                                        <tr>
+                                            <td>
+                                                <div class="media">
+                                                    <div class="d-flex">
+                                                        <img style="width: 10%; height: auto;" src="<%= product.mainImageUrl %>" alt="" />
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p>
+                                                            <%= product.name %>
+                                                        </p>
+                                                        <p>
+                                                            <%= product.description.substring(0,17) %>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h5>$
+                                                    <%= product.price %>
+                                                </h5>
+                                            </td>
+                                        </tr>
+                                        <% } %>
+                                            <tr class="bottom_button">
+                                                <td>
+                                                    <a class="btn_1" href="/cart">Update Cart</a>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <h5>Subtotal</h5>
+                                                </td>
+                                                <td>
+                                                    <h5>$
+                                                        <%= session.user.basket.reduce((total, product) => total + product.price, 0) %>
+                                                    </h5>
+                                                </td>
+                                            </tr>
+                                            <tr class="shipping_area">
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <h5>Shipping</h5>
+                                                </td>
+                                                <td>
+                                                    <div class="shipping_box">
+                                                        <p>
+                                                            Flat Rate: $5.00
+                                                        </p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                </tbody>
+                            </table>
+                            <div class="checkout_btn_inner float-right">
+                                <a class="btn_1" href="/shop">Continue Shopping</a>
+                                <a class="btn_1 checkout_btn_1" href="/checkout">Proceed to checkout</a>
+                            </div>
+                        </div>
+                        <% } else { %>
+                            <!-- breadcrumb start-->
+                            <section class="breadcrumb breadcrumb_bg">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <div class="breadcrumb_iner">
+                                                <div class="breadcrumb_iner_item">
+                                                    <h2>Empty Cart</h2>
+                                                    <a class="btn_1" href="/shop">Continue Shopping</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- breadcrumb start-->
+                            <% } %>
+                </div>
+        </section>
+        <!--================End Cart Area =================-->
+
+
+        <%- include("../partial/footer") %>
+            <%- include("../partial/scripts") %>
+</body>
+
+</html>

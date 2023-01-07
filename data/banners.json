@@ -1,0 +1,22 @@
+[{
+        "title": "Cloth & Wood Sofa",
+        "content": "Incididunt ut labore et dolore magna aliqua quis ipsum suspendisse ultrices gravida. Risus commodo viverra",
+        "buttonHref": "/",
+        "buttonText": "Shop Now",
+        "imageUrl": "/img/banner_img.png"
+    },
+    {
+        "title": "Wood & Cloth Sofa",
+        "content": "Incididunt ut labore et dolore magna aliqua quis ipsum suspendisse ultrices gravida. Risus commodo viverra",
+        "buttonHref": "/",
+        "buttonText": "Get Now",
+        "imageUrl": "/img/banner_img.png"
+    },
+    {
+        "title": "Blue & Wood Sofa",
+        "content": "Incididunt ut labore et dolore magna aliqua quis ipsum suspendisse ultrices gravida. Risus commodo viverra",
+        "buttonHref": "/",
+        "buttonText": "Buy Now",
+        "imageUrl": "/img/banner_img.png"
+    }
+]
