@@ -1,5 +1,5 @@
 [{
-        "imageUrl": "img/feature/feature_1.png",
+        "imageUrl": "/img/feature/feature_1.png",
         "route": "dining-chair",
         "name": "dining Chair",
         "col-lg": "col-lg-7",
@@ -7,7 +7,7 @@
         "short": "Premium Quality"
     },
     {
-        "imageUrl": "img/feature/feature_2.png",
+        "imageUrl": "/img/feature/feature_2.png",
         "route": "cafe-chair",
         "name": "cafe Chair",
         "col-lg": "col-lg-5",
@@ -15,7 +15,7 @@
         "short": "Premium Quality"
     },
     {
-        "imageUrl": "img/feature/feature_3.png",
+        "imageUrl": "/img/feature/feature_3.png",
         "route": "lounge-chair",
         "name": "lounge Chair",
         "col-lg": "col-lg-5",
@@ -23,7 +23,7 @@
         "short": "Premium Quality"
     },
     {
-        "imageUrl": "img/feature/feature_4.png",
+        "imageUrl": "/img/feature/feature_4.png",
         "route": "foam-sofa",
         "name": "foam Sofa",
         "col-lg": "col-lg-7",
