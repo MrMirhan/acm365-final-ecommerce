@@ -10,7 +10,6 @@ var expressSession = require('express-session')
 const err = require('./middleware/errors');
 const userRoutes = require('./routes/user-routes');
 const mainRoutes = require('./routes/main-routes');
-//const basketRoutes = require('./routes/basket-routes');
 const productRoutes = require('./routes/product-routes');
 
 const user = require('./data/users.json');
@@ -53,7 +52,6 @@ var refreshSession = async function(req, res, next) {
 app.use(refreshSession);
 app.use(userRoutes.routes);
 app.use(mainRoutes.routes);
-//app.use(basketRoutes.routes);
 app.use(productRoutes.routes);
 app.use(err);
 
